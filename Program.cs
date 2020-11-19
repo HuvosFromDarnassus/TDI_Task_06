@@ -232,6 +232,8 @@ namespace TDI_Task_06
                     Array.Resize(ref arrayPosition, size);
                     Array.Resize(ref dossierArray, size);
 
+                    Console.Clear();
+
                     dossierArray = CreateDossier(arrayFIO, arrayPosition, size);
 
                     isFirstLaunch = false;
@@ -252,6 +254,7 @@ namespace TDI_Task_06
                             Console.WriteLine("\nHow many dossiers do you want to add ?");
                             Console.Write("\n> ");
                             size = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
 
                             newSize += size;
 
